@@ -4,16 +4,11 @@ A REST backend for task tracking and team collaboration: users create tasks, ass
 and discuss them through comments and file attachments.
 
 **Stack:** Java 17, Spring Boot 3.5, Spring Security (stateless JWT), Spring Data JPA / Hibernate,
-MySQL, Maven. Tests run on an in-memory H2 database.
+MySQL, Maven.
 
 ## Quick start
 
-Requires JDK 17+, Maven 3.9+ and Docker (for MySQL).
-
-```bash
-docker compose up -d                              # MySQL on :5432
-SPRING_PROFILES_ACTIVE=dev mvn spring-boot:run    # API on http://localhost:8080
-```
+Requires JDK 17+, Maven 3.9+ and MySQL.
 
 - Swagger UI (try every endpoint, with a *Authorize* button for the JWT): http://localhost:8080/swagger-ui.html
 - Tests: `mvn verify`
