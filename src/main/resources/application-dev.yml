@@ -1,0 +1,4 @@
+# Local development only. Never use this secret outside your machine.
+app:
+  jwt:
+    secret: dev-only-secret-change-me-dev-only-secret-change-me
